@@ -78,7 +78,7 @@ form div {
     text-align: center;
    }
    
-  form .checkbox input, form .checkbox label{
+  form .checkbox *{
     width: auto;
     display: inline;
   }
