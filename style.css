@@ -12,3 +12,73 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
+
+/*-----------*/
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    border: 1px black solid;
+    width: 70vw;
+    height: auto;
+}
+
+.header{
+    text-align: center;
+    padding-top: 2.5rem;
+    background-color: aqua;
+}
+
+.container .body{
+    border: 1px red solid;
+}
+
+form div {
+    margin: 1rem;
+  }
+  
+  label,
+  input,
+  textarea
+  button,
+  select{
+    font-size: 1.3rem;
+  }
+  
+  form {
+    width: 40em;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  label {
+    margin-bottom: 0.4rem;
+    display: block;
+  }
+  
+  input,
+  textarea {
+    padding: 0.4rem;
+    width: 90%;
+  }
+  
+  button {
+    border-radius: 29px;
+    background-color: #405cf5;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    border-width: 0;
+    padding: 0 1rem;
+    width: 90%;
+    height: 50px;
+    text-align: center;
+   }
+   
+  form .checkbox input, form .checkbox label{
+    width: auto;
+    display: inline;
+  }
