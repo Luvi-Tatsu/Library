@@ -34,6 +34,13 @@ body{
 .container .body{
     border: 1px red solid;
 }
+dialog{
+  margin: auto;
+}
+
+button#updateBook{
+  width: 100%;
+}
 
 form div {
     margin: 1rem;
@@ -120,3 +127,4 @@ form div {
   .output .card{
     border: 1px solid blue;
   }
+

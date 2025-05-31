@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Library</title>
 </head>
@@ -13,7 +12,9 @@
             <h1>LIBRARY</h1>
         </div>
         <div class="body">
-            <form action="">
+
+            <dialog class="addBook">
+            <form method="dialog">
                 <div class="formTitle"><h1>Add Book</h1></div>
                 <div class="title">
                     <label for="title">Title</label>
@@ -32,9 +33,13 @@
                     <label for="checkbox">Check if you read the Book</label>
                 </div>
                 <div class="save">
-                    <button class="save">Save</button>
+                    <button class="save" type="submit">Save</button>
                 </div>
             </form>
+             </dialog>
+             <div>
+                <button id="updateBook">Add Book</button>
+              </div>
             <div class="output">
                 <div class="card">
                     
@@ -66,6 +71,6 @@
         </div>
 
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
