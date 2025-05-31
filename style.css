@@ -64,7 +64,7 @@ form div {
     width: 90%;
   }
   
-  button {
+  button.save{
     border-radius: 29px;
     background-color: #405cf5;
     box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
@@ -81,4 +81,42 @@ form div {
   form .checkbox *{
     width: auto;
     display: inline;
+  }
+
+  .output{
+    border: 1px solid orange;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .output .content{
+    padding: 1.5rem;
+    
+  }
+  ul,li{
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  div.delBtn{
+    position: relative;
+  }
+
+  button.delete{
+    margin: 1px;
+    color: gray;
+    position: absolute;
+    right: 0px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button.delete:hover{
+    border: 1px gray solid;
+  }
+  .output .card{
+    border: 1px solid blue;
   }
