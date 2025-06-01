@@ -71,7 +71,7 @@ form div {
     width: 90%;
   }
   
-  button.save{
+  button.save, button.cancel{
     border-radius: 29px;
     background-color: #405cf5;
     box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
@@ -83,6 +83,7 @@ form div {
     width: 90%;
     height: 50px;
     text-align: center;
+    margin-top: 1rem;
    }
    
   form .checkbox *{
@@ -102,7 +103,7 @@ form div {
     
   }
   ul,li{
-    text-align: center;
+    
     list-style-type: none;
     padding-left: 0;
     cursor: pointer;
@@ -127,4 +128,3 @@ form div {
   .output .card{
     border: 1px solid blue;
   }
-

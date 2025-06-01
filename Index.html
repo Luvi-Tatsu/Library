@@ -26,33 +26,23 @@
                 </div>
                 <div class="pages">
                     <label for="date">Pages</label>
-                    <input type="number" name="page" id="page">
+                    <input type="number" name="page" id="page" required>
                 </div>
                 <div class="checkbox">
-                    <input type="checkbox" name="checkbox" id="checkbox" value="read">
+                    <input type="checkbox" name="checkbox" id="checkbox">
                     <label for="checkbox">Check if you read the Book</label>
                 </div>
-                <div class="save">
+                <div class="button">
                     <button class="save" type="submit">Save</button>
+                    <button id="cancel" class="cancel" type="button">Cancel</button>
                 </div>
             </form>
              </dialog>
-             <div>
+             <div class="updateBookContainer">
                 <button id="updateBook">Add Book</button>
               </div>
             <div class="output">
-                <div class="card">
-                    <div class="delBtn">
-                    <button class="delete">x</button>
-                    </div>
-                    <div class="content">
-                    <ul class="book">
-                        <li class="title">The Hobbit</li>
-                        <li class="author">J.R.R Tolkien</li>
-                        <li class="pages">350 Pages</li>
-                        <li class="read">Read</li>
-                    </ul>
-                    </div>
+
             </div>
         </div>
 
