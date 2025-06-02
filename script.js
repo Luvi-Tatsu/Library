@@ -32,6 +32,8 @@ function Book(title, author, pages, read){
    this.read = read;
    this.id = crypto.randomUUID();
 }
+Book.prototype.readIsTrue = true;
+Object.getPrototypeOf(Book.prototype);
 
 const firstBook = new Book('The Hobbit', 'J.R.R. Tolkien', '265', 'read');
 myLibrary.push(firstBook);
@@ -78,7 +80,7 @@ function createTable() {
     myLibrary.forEach((items)=>{
     if(items.id === deleteBtn.id){
       myLibrary.splice(myLibrary[myLibrary.indexOf(items)],1);
-     updateBook.textContent += 1;
+      console.log(myLibrary)
     }             
    })
    let display = deleteBtn.parentElement.parentElement;
@@ -91,6 +93,7 @@ function createTable() {
 
 function createLists(item){
  let ulBook = createTable();
+ 
  let myTitle = document.createElement("li");
  myTitle.textContent = `Title: ${item.title}`;
  let myAuthor = document.createElement("li");
@@ -98,9 +101,29 @@ function createLists(item){
  let myPage = document.createElement("li");
  myPage.textContent = `Page: ${item.pages} pages`;
  let myRead = document.createElement("li");
- if(item.read == true){
- myRead.textContent = "read";
- }else{myRead.textContent = "not read";}
- ulBook.append(myTitle,myAuthor,myPage,myRead);
+ if(item.read === true){
+   myRead.textContent = "read";
+   Book.prototype.readIsTrue = false;
+   }
+   else if(item.read != true){
+      myRead.textContent = "not read";
+
+   }
+ let readOrNotReadButton = document.createElement('button');
+ readOrNotReadButton.textContent = "Read";
+ readOrNotReadButton.addEventListener('click',()=>{
+   if(item.readIsTrue === true){
+      myRead.textContent = "read";
+      item.readIsTrue = false;
+      console.log(item.readIsTrue)
+      }
+      else if(item.readIsTrue === false){
+            myRead.textContent = "not read"; 
+            item.readIsTrue = true;
+            console.log(item.readIsTrue);
+         }
+ })
+
+ ulBook.append(myTitle,myAuthor,myPage,myRead,readOrNotReadButton);
 }
 
