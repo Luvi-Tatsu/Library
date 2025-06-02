@@ -103,7 +103,7 @@ function createLists(item){
  let myRead = document.createElement("li");
  if(item.read === true){
    myRead.textContent = "read";
-   Book.prototype.readIsTrue = false;
+   item.readIsTrue = false;
    }
    else if(item.read != true){
       myRead.textContent = "not read";
