@@ -15,12 +15,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /*-----------*/
 body{
-    display: flex;
+    display: grid;
     justify-content: center;
+    background-color: #f8f4d9;
 }
 
 .container{
-    border: 1px black solid;
     width: 70vw;
     height: auto;
 }
@@ -28,18 +28,24 @@ body{
 .header{
     text-align: center;
     padding-top: 2.5rem;
-    background-color: aqua;
+    background-color: #00ffab;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    padding-bottom: 2.5rem;
 }
 
-.container .body{
-    border: 1px red solid;
-}
 dialog{
   margin: auto;
 }
 
 button#updateBook{
   width: 100%;
+  box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+  cursor: pointer;
+  border-color: #aaa;
+  border: 1px solid #aaa;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 form div {
@@ -92,10 +98,15 @@ form div {
   }
 
   .output{
-    border: 1px solid orange;
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
+    background-color: #b967ff;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    min-height: 500px;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
   }
 
   .output .content{
@@ -118,7 +129,7 @@ form div {
     color: gray;
     position: absolute;
     right: 0px;
-    background-color: white;
+    background-color: #eaff7b;
     border: none;
     cursor: pointer;
   }
@@ -126,5 +137,10 @@ form div {
     border: 1px gray solid;
   }
   .output .card{
-    border: 1px solid blue;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    border: none;
+    background-color: #eaff7b;
+    text-align: center;
+    margin:1rem;
+    
   }

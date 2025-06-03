@@ -35,9 +35,14 @@ function Book(title, author, pages, read){
 Book.prototype.readIsTrue = true;
 Object.getPrototypeOf(Book.prototype);
 
-const firstBook = new Book('The Hobbit', 'J.R.R. Tolkien', '265', 'read');
+const firstBook = new Book('The Hobbit', 'J.R.R. Tolkien', '265', false);
 myLibrary.push(firstBook);
 createLists(myLibrary[0]);
+
+const secondBook = new Book('I dont Read Books', 'Me', '1', true);
+myLibrary.push(secondBook);
+createLists(myLibrary[1]);
+
 
 function addBookToLibrary() {
  let title = document.querySelector("input#title").value;
